@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('theme-toggle');
   const htmlElement = document.documentElement;
 
-  // Retrieve existing theme or default to dark
-  const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+  // Retrieve existing theme or default to light
+  const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
   htmlElement.setAttribute('data-theme', savedTheme);
 
   themeToggle.addEventListener('click', () => {

@@ -34,6 +34,18 @@
   --success-color: #10b981;
   --error-color: #ef4444;
 
+  /* Badge and Icon dynamics for Dark Theme */
+  --badge-success-bg: rgba(16, 185, 129, 0.15);
+  --badge-success-text: #10b981;
+  --badge-success-border: rgba(16, 185, 129, 0.2);
+  --badge-accent-bg: rgba(56, 189, 248, 0.15);
+  --badge-accent-text: #38bdf8;
+  --badge-accent-border: rgba(56, 189, 248, 0.2);
+  
+  --accent-bg-glow: rgba(56, 189, 248, 0.12);
+  --accent-secondary-bg-glow: rgba(129, 140, 248, 0.15);
+  --card-border: 1px solid var(--border-color);
+
   /* Transition timings */
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-normal: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -53,24 +65,36 @@
   --bg-alt: #f1f5f9;
   
   --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #94a3b8;
+  --text-secondary: #334155;
+  --text-muted: #57657a;
   
-  --accent-color: #2563eb;
-  --accent-secondary: #4f46e5;
-  --accent-gradient: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%);
-  --accent-gradient-hover: linear-gradient(135deg, #1d4ed8 0%, #4338ca 100%);
+  --accent-color: #1d4ed8; /* Stronger dark blue for high visibility and WCAG contrast */
+  --accent-secondary: #4338ca;
+  --accent-gradient: linear-gradient(135deg, #1d4ed8 0%, #4338ca 100%);
+  --accent-gradient-hover: linear-gradient(135deg, #1e40af 0%, #3730a3 100%);
   
-  --border-color: rgba(15, 23, 42, 0.08);
-  --border-color-focus: rgba(37, 99, 235, 0.4);
+  --border-color: rgba(15, 23, 42, 0.1);
+  --border-color-focus: rgba(29, 78, 216, 0.5);
   
-  --card-bg: rgba(255, 255, 255, 0.8);
-  --card-hover-bg: rgba(255, 255, 255, 0.95);
-  --card-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.06);
-  --glass-glow: 0 0 20px rgba(37, 99, 235, 0.08);
+  --card-bg: #ffffff;
+  --card-hover-bg: #ffffff;
+  --card-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08), 0 1px 3px rgba(15, 23, 42, 0.03);
+  --glass-glow: 0 0 25px rgba(29, 78, 216, 0.06);
   
-  --navbar-bg: rgba(248, 250, 252, 0.8);
-  --footer-bg: #e2e8f0;
+  --navbar-bg: rgba(248, 250, 252, 0.85);
+  --footer-bg: #f1f5f9;
+
+  /* Badge and Icon dynamics for Light Theme - Super Clear & Highly Visible */
+  --badge-success-bg: rgba(4, 120, 87, 0.08);
+  --badge-success-text: #047857; /* Rich dark green */
+  --badge-success-border: rgba(4, 120, 87, 0.15);
+  --badge-accent-bg: rgba(29, 78, 216, 0.08);
+  --badge-accent-text: #1d4ed8; /* Rich dark blue */
+  --badge-accent-border: rgba(29, 78, 216, 0.15);
+
+  --accent-bg-glow: rgba(29, 78, 216, 0.1);
+  --accent-secondary-bg-glow: rgba(67, 56, 202, 0.1);
+  --card-border: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 /* --- Base & Reset Styles --- */
@@ -318,7 +342,7 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--card-bg);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--border-color);
+  border: var(--card-border);
   border-radius: var(--radius-lg);
   padding: 2.5rem;
   box-shadow: var(--card-shadow);
@@ -389,15 +413,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .badge-success {
-  background-color: rgba(16, 185, 129, 0.15);
-  color: var(--success-color);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  background-color: var(--badge-success-bg);
+  color: var(--badge-success-text);
+  border: 1px solid var(--badge-success-border);
 }
 
 .badge-accent {
-  background-color: rgba(56, 189, 248, 0.15);
-  color: var(--accent-color);
-  border: 1px solid rgba(56, 189, 248, 0.2);
+  background-color: var(--badge-accent-bg);
+  color: var(--badge-accent-text);
+  border: 1px solid var(--badge-accent-border);
 }
 
 /* --- Hero Section --- */
@@ -515,7 +539,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 48px;
   height: 48px;
   border-radius: var(--radius-md);
-  background: rgba(56, 189, 248, 0.1);
+  background: var(--accent-bg-glow);
   color: var(--accent-color);
   display: flex;
   align-items: center;
@@ -710,7 +734,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 52px;
   height: 52px;
   border-radius: var(--radius-md);
-  background: rgba(129, 140, 248, 0.1);
+  background: var(--accent-secondary-bg-glow);
   color: var(--accent-secondary);
   display: flex;
   align-items: center;
@@ -998,7 +1022,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 48px;
   height: 48px;
   border-radius: var(--radius-md);
-  background: rgba(56, 189, 248, 0.1);
+  background: var(--accent-bg-glow);
   color: var(--accent-color);
   display: flex;
   align-items: center;
