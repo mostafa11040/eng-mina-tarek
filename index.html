@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mina Tarek Nazer Ghots - IT & Networking Engineer Portfolio. Fresh Computer Science graduate from Ain Shams University specialized in computer systems, network configuration (CCNA), and help desk support.">
+  <title>Mina Tarek | IT & Networking Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  
+  <style>
+    /* Prevent flash of unstyled content in dark theme */
+    body {
+      background-color: #0b0f19;
+      color: #f1f5f9;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">MINA <span>TAREK</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light and dark theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+          <i data-lucide="menu" class="menu-icon"></i>
+          <i data-lucide="x" class="close-icon" style="display: none;"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#home" class="mobile-nav-link">Home</a>
+    <a href="#about" class="mobile-nav-link">About</a>
+    <a href="#experience" class="mobile-nav-link">Experience</a>
+    <a href="#projects" class="mobile-nav-link">Projects</a>
+    <a href="#skills" class="mobile-nav-link">Skills</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero section-padding">
+    <div class="container hero-container-flex">
+      <div class="hero-content reveal">
+        <div class="badge-row">
+          <span class="badge badge-success"><i data-lucide="shield-check"></i> Military Status: Completed</span>
+          <span class="badge badge-accent"><i data-lucide="graduation-cap"></i> Ain Shams Alumnus</span>
+        </div>
+        <h1>Hi, I'm <span class="gradient-text">Mina Tarek</span></h1>
+        <h2>IT &amp; Networking Engineer</h2>
+        <p class="hero-description">
+          A fresh Computer Science graduate passionate about building a career in IT and Networking. Skilled in CCNA-level network configuration, ITIL ticket management, and Active Directory system administration.
+        </p>
+        <div class="hero-btns">
+          <a href="#experience" class="btn btn-primary">Explore My Experience <i data-lucide="arrow-right"></i></a>
+          <a href="https://www.linkedin.com/in/mina-tarek-91a893242" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i data-lucide="linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper reveal">
+        <div class="image-bg-glow"></div>
+        <img src="assets/avatar.png" alt="Mina Tarek Professional Concept" class="profile-img">
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="glass-card reveal">
+        <div class="section-title text-left">
+          <span class="section-subtitle">Introduction</span>
+          <h2>Objective &amp; Background</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="objective-text">
+              "As a fresh graduate of Computer Science from Ain Shams University, I am passionate about building a career in IT and Networking. I aim to leverage my technical knowledge, problem-solving skills, and enthusiasm for learning to contribute effectively to a dynamic team, ensuring the smooth operation and security of IT infrastructure. Seeking an opportunity to grow and develop my expertise in networking technologies and IT support."
+            </p>
+            
+            <div class="education-card">
+              <div class="edu-icon-box">
+                <i data-lucide="graduation-cap"></i>
+              </div>
+              <div class="edu-info">
+                <h3>Bachelor's Degree in Computer Science</h3>
+                <p class="school-name">Faculty of Computer and Information Science, Ain Shams University</p>
+                <div class="edu-meta">
+                  <span><strong>Major:</strong> Computer System</span>
+                  <span><strong>Graduation Year:</strong> 2023</span>
+                  <span class="project-tag"><strong>Graduation Project:</strong> Excellence Degree</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="personal-details-card">
+            <h3>Personal Details</h3>
+            <div class="details-list">
+              <div class="detail-item">
+                <i data-lucide="calendar"></i>
+                <div class="detail-info">
+                  <span class="detail-label">Date of Birth</span>
+                  <span class="detail-val">02/05/2000</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i data-lucide="heart"></i>
+                <div class="detail-info">
+                  <span class="detail-label">Marital Status</span>
+                  <span class="detail-val">Single</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i data-lucide="flag"></i>
+                <div class="detail-info">
+                  <span class="detail-label">Military Service</span>
+                  <span class="detail-val">Completed</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i data-lucide="map-pin"></i>
+                <div class="detail-info">
+                  <span class="detail-label">Location</span>
+                  <span class="detail-val">Shoubra, Cairo, Egypt</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section-padding bg-alt">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-subtitle">My Career Path</span>
+        <h2>Professional Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- WE company -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i data-lucide="briefcase"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <span class="company-badge">WE Telecom Egypt</span>
+              <span class="timeline-date">Recent</span>
+            </div>
+            <h3>Technical Support Engineer</h3>
+            <ul class="timeline-bullets">
+              <li>Providing technical support to customers by troubleshooting internet and telecom service issues.</li>
+              <li>Managing tickets and ensuring timely resolution of technical problems.</li>
+              <li>Communicating with internal teams to escalate unresolved issues.</li>
+              <li>Ensuring high customer satisfaction through clear communication and follow-up.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Future Egypt -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i data-lucide="briefcase"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <span class="company-badge">Future Egypt Sustainable Development</span>
+              <span class="timeline-date">Help Desk Employee</span>
+            </div>
+            <h3>Help Desk Employee</h3>
+            <ul class="timeline-bullets">
+              <li>Provided first-level technical support, resolving hardware, software, and network-related incidents.</li>
+              <li>Configured and maintained network devices as per CCNA best practices.</li>
+              <li>Performed troubleshooting for printers, telephony systems, and end-user devices to maintain business continuity.</li>
+              <li>Escalated unresolved incidents to 2nd-level support teams and followed up on resolution progress.</li>
+              <li>Delivered IT policy training to end users, reducing recurring issues and enhancing operational efficiency.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Efinence -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i data-lucide="phone-call"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <span class="company-badge">Efinence</span>
+              <span class="timeline-date">Customer Service</span>
+            </div>
+            <h3>Customer Service Representative</h3>
+            <ul class="timeline-bullets">
+              <li>Handled client inquiries, providing technical assistance and resolving service-related issues effectively.</li>
+              <li>Ensured client satisfaction by maintaining clear communication and addressing their needs promptly.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Vezeeta -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">
+            <i data-lucide="user-check"></i>
+          </div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <span class="company-badge">Vezeeta</span>
+              <span class="timeline-date">Customer Service</span>
+            </div>
+            <h3>Customer Service Specialist</h3>
+            <ul class="timeline-bullets">
+              <li>Assisting patients with their inquiries, requests, reservations, and cancellations of reservations.</li>
+              <li>Manage large amounts of incoming/outgoing calls in a timely manner.</li>
+              <li>Follow communication "scripts" when handling different topics.</li>
+              <li>Identify customers' needs, clarify information, research every issue and provide solutions and/or alternatives.</li>
+              <li>Build sustainable relationships and engage customers by taking the extra mile.</li>
+              <li>Keep records of all conversations in our call center database.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-subtitle">Academic &amp; Applied Work</span>
+        <h2>Key Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Security Algorithms -->
+        <div class="project-card glass-card reveal">
+          <div class="project-icon-box">
+            <i data-lucide="shield-alert"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">C#</span>
+              <span class="tag">Team Project</span>
+              <span class="tag">Cryptography</span>
+            </div>
+            <h3>Security Algorithms Library</h3>
+            <p>Developed a comprehensive library of classic and modern security algorithms, implementing core encryption and decryption systems including RSA, DES, 3DES, Railfence, Columnar, and Hill Cipher.</p>
+          </div>
+        </div>
+
+        <!-- Project 2: Machine Learning -->
+        <div class="project-card glass-card reveal">
+          <div class="project-icon-box">
+            <i data-lucide="trending-up"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Python / ML</span>
+              <span class="tag">Data Analysis</span>
+              <span class="tag">Linear Regression</span>
+            </div>
+            <h3>Stock Price Prediction</h3>
+            <p>An applied study analyzing stock datasets and predicting future financial market prices using machine learning techniques. Built models with Linear Regression, Neural Networks, and Decision Trees, evaluating and comparing their predictive accuracies.</p>
+          </div>
+        </div>
+
+        <!-- Project 3: Food Category System -->
+        <div class="project-card glass-card reveal">
+          <div class="project-icon-box">
+            <i data-lucide="layers"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">OOP</span>
+              <span class="tag">CRUD System</span>
+            </div>
+            <h3>Food Category Management</h3>
+            <p>Designed and programmed an object-oriented system in Java to manage structured food categories, allowing users to dynamically add, edit, search, and delete categories with optimized efficiency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-padding bg-alt">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-subtitle">Technical Toolbox</span>
+        <h2>Skills &amp; Expertise</h2>
+      </div>
+
+      <!-- Skills Tab Headers -->
+      <div class="skills-tab-headers reveal">
+        <button class="tab-btn active" data-tab="technical">Technical Skills</button>
+        <button class="tab-btn" data-tab="personal">Personal Skills</button>
+        <button class="tab-btn" data-tab="academic">Relevant Courses</button>
+        <button class="tab-btn" data-tab="languages">Languages &amp; Utilities</button>
+      </div>
+
+      <!-- Skills Tab Panels -->
+      <div class="skills-tab-content reveal">
+        <!-- Technical Skills -->
+        <div class="tab-panel active" id="technical">
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>IT &amp; Networks</h4>
+              <ul class="skill-list-items">
+                <li><i data-lucide="check-circle" class="list-bullet"></i> Troubleshooting hardware, software, and network issues</li>
+                <li><i data-lucide="check-circle" class="list-bullet"></i> Network configuration and maintenance (CCNA-level)</li>
+                <li><i data-lucide="check-circle" class="list-bullet"></i> Active Directory configuration &amp; administration (MCSA-level)</li>
+                <li><i data-lucide="check-circle" class="list-bullet"></i> ITIL knowledge and ticket management workflows</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h4>Software &amp; Data</h4>
+              <ul class="skill-list-items">
+                <li><i data-lucide="check-circle" class="list-bullet"></i> SQL: Writing queries for data retrieval and analysis</li>
+                <li><i data-lucide="check-circle" class="list-bullet"></i> Data analysis and model development</li>
+                <li><i data-lucide="check-circle" class="list-bullet"></i> Software development methodologies</li>
+                <li><i data-lucide="check-circle" class="list-bullet"></i> ERP Systems: Basic knowledge with rapid adaptability</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h4>Programming Languages</h4>
+              <div class="tech-badges">
+                <span class="tech-badge">C++</span>
+                <span class="tech-badge">C#</span>
+                <span class="tech-badge">Java</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">HTML / CSS</span>
+                <span class="tech-badge">SQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal Skills -->
+        <div class="tab-panel" id="personal">
+          <div class="personal-skills-container">
+            <div class="personal-skill-card">
+              <i data-lucide="message-square"></i>
+              <span>Excellent Communication</span>
+            </div>
+            <div class="personal-skill-card">
+              <i data-lucide="smile"></i>
+              <span>Customer &amp; Service Oriented</span>
+            </div>
+            <div class="personal-skill-card">
+              <i data-lucide="shopping-cart"></i>
+              <span>Selling Capabilities</span>
+            </div>
+            <div class="personal-skill-card">
+              <i data-lucide="handshake"></i>
+              <span>Negotiation Skills</span>
+            </div>
+            <div class="personal-skill-card">
+              <i data-lucide="brain"></i>
+              <span>Problem Solving</span>
+            </div>
+            <div class="personal-skill-card">
+              <i data-lucide="git-commit"></i>
+              <span>Decision Making</span>
+            </div>
+            <div class="personal-skill-card">
+              <i data-lucide="banknote"></i>
+              <span>Retail Banking Knowledge</span>
+            </div>
+            <div class="personal-skill-card">
+              <i data-lucide="flame"></i>
+              <span>Working Under Pressure</span>
+            </div>
+            <div class="personal-skill-card">
+              <i data-lucide="sliders"></i>
+              <span>High Sense of Control</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic / Relevant Courses -->
+        <div class="tab-panel" id="academic">
+          <div class="courses-grid">
+            <div class="course-card">
+              <div class="course-icon"><i data-lucide="folder-git"></i></div>
+              <h5>Data Structure &amp; Algorithm</h5>
+            </div>
+            <div class="course-card">
+              <div class="course-icon"><i data-lucide="database"></i></div>
+              <h5>Database Management</h5>
+            </div>
+            <div class="course-card">
+              <div class="course-icon"><i data-lucide="code"></i></div>
+              <h5>Object Oriented Programming</h5>
+            </div>
+            <div class="course-card">
+              <div class="course-icon"><i data-lucide="cpu"></i></div>
+              <h5>Microprocessor Based Systems</h5>
+            </div>
+            <div class="course-card">
+              <div class="course-icon"><i data-lucide="network"></i></div>
+              <h5>Computer Network (CCNA, MCSA)</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages & Utilities -->
+        <div class="tab-panel" id="languages">
+          <div class="languages-utilities-grid">
+            <div class="lang-util-section">
+              <h4>Language Proficiency</h4>
+              <div class="lang-row">
+                <span class="lang-name">Arabic</span>
+                <span class="lang-level">Native / Excellent Command</span>
+              </div>
+              <div class="lang-row">
+                <span class="lang-name">English</span>
+                <span class="lang-level">Excellent Command</span>
+              </div>
+            </div>
+            <div class="lang-util-section">
+              <h4>Computer Skills &amp; Office Suites</h4>
+              <ul class="skill-list-items">
+                <li><i data-lucide="check" class="list-bullet"></i> Microsoft Office Suite (Word, Excel, PowerPoint, Outlook)</li>
+                <li><i data-lucide="check" class="list-bullet"></i> Operating Systems troubleshooting (Windows, Windows Server)</li>
+                <li><i data-lucide="check" class="list-bullet"></i> General administrative IT workflows</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-subtitle">Get in Touch</span>
+        <h2>Let's build something together</h2>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Contact Information -->
+        <div class="contact-info-column reveal">
+          <h3>Contact Details</h3>
+          <p class="contact-intro">Feel free to reach out to me for professional networking opportunities, IT support openings, or network infrastructure roles.</p>
+          
+          <div class="contact-details-list">
+            <div class="contact-detail-card">
+              <div class="detail-icon"><i data-lucide="mail"></i></div>
+              <div class="detail-text">
+                <span class="label">Email Me</span>
+                <a href="mailto:minatarek262@gmail.com" class="val">minatarek262@gmail.com</a>
+              </div>
+            </div>
+            
+            <div class="contact-detail-card">
+              <div class="detail-icon"><i data-lucide="phone"></i></div>
+              <div class="detail-text">
+                <span class="label">Call Me</span>
+                <a href="tel:01155844810" class="val">01155844810</a>
+              </div>
+            </div>
+            
+            <div class="contact-detail-card">
+              <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+              <div class="detail-text">
+                <span class="label">Location</span>
+                <span class="val">Shoubra, Cairo, Egypt</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/mina-tarek-91a893242" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i data-lucide="linkedin"></i></a>
+            <a href="mailto:minatarek262@gmail.com" aria-label="Email directly"><i data-lucide="mail"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-column glass-card reveal">
+          <h3>Send a Message</h3>
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="Inquiry about networking project">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required rows="5" placeholder="Write your message here..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+              <span>Send Message</span> <i data-lucide="send"></i>
+            </button>
+            <div id="form-feedback" class="form-feedback" style="display: none;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="copyright">&copy; 2026 Mina Tarek Nazer Ghots. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="index.js"></script>
+</body>
+</html>
